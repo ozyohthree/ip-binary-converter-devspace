@@ -1,6 +1,6 @@
 schemaVersion: 2.2.2
 metadata:
-  name: reactjs-web-app
+  name: ip-binary-converter-devspace
 components:
   - name: tools
     container:
