@@ -1,0 +1,28 @@
+{
+	"folders": [
+		{
+			"name": "ip-binary-converter-devspace",
+			"path": "/projects/ip-binary-converter-devspace"
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"redhat.vscode-yaml",
+			"mhutchie.git-graph",
+			"eamodio.gitlens",
+			"streetsidesoftware.code-spell-checker",
+			"cnshenj.vscode-task-manager",
+			"ms-playwright.playwright"
+		]
+	},
+	"settings": {
+		"workbench.colorTheme": "Default Dark Modern",
+		"workbench.preferredDarkColorTheme": "Default Dark Modern",
+		"workbench.preferredLightColorTheme": "Winter is Coming (Light)",
+		"editor.wordWrap": "on",
+		"files.autoSave": "afterDelay",
+		"terminal.integrated.fontSize": 14,
+    	"editor.fontSize": 14,
+    	"debug.console.fontSize": 14
+	}
+}

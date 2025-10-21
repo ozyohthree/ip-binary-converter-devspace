@@ -1,0 +1,58 @@
+schemaVersion: 2.2.2
+metadata:
+  name: reactjs-web-app
+components:
+  - name: tools
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel9:3.22
+      endpoints:
+        - exposure: public
+          name: nodejs
+          protocol: https
+          targetPort: 3000
+      memoryLimit: '1Gi'
+      memoryRequest: '512Mi'
+      cpuLimit: '0.5'
+      cpuRequest: '0.25'
+      mountSources: true
+      volumeMounts:
+        - name: npm
+          path: /home/user/.npm
+  - name: npm
+    volume:
+      size: 1G    
+commands:
+  - id: 1-dependencies
+    exec:
+      label: "Download dependencies"
+      component: tools
+      workingDir: /projects/ip-binary-converter-devspace
+      commandLine: "npm install"
+      group:
+        kind: build
+  - id: 2-run
+    exec:
+      label: "Run the web app"
+      component: tools
+      workingDir: /projects/ip-binary-converter-devspace
+      commandLine: "npm start"
+      group:
+        kind: run
+  - id: 3-install-and-run
+    exec:
+      label: "Run the web app (and download dependencies)"
+      component: tools
+      workingDir: /projects/ip-binary-converter-devspace
+      commandLine: "npm install; npm start"
+      group:
+        kind: run
+  - id: 4-test
+    exec:
+      label: "Run the web app (and download dependencies)"
+      component: tools
+      workingDir: /projects/ip-binary-converter-devspace
+      commandLine: "npm test"
+      group:
+        kind: test
+
+
