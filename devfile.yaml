@@ -11,9 +11,9 @@ components:
           name: nodejs
           protocol: https
           targetPort: 3000
-      memoryLimit: '1Gi'
+      memoryLimit: '4Gi'
       memoryRequest: '512Mi'
-      cpuLimit: '0.5'
+      cpuLimit: '1'
       cpuRequest: '0.25'
       mountSources: true
       volumeMounts:
