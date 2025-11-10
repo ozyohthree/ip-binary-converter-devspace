@@ -19,7 +19,7 @@ components:
       env:
       - name: VSCODE_DEFAULT_WORKSPACE
         value: "/projects/ip-binary-converter-devspace/ip-binary-converter-devspace.code-workspace"
-        name: HOME
+      - name: HOME
         value: /projects/home
 commands:
   - id: 1-dependencies
