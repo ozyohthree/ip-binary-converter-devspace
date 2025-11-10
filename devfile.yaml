@@ -4,8 +4,7 @@ metadata:
 components:
   - name: tools
     container:
-      # registry.redhat.io/devspaces/udi-rhel9:3.22
-      image: quay.io/cgruver0/che/sshd-workspace-base:nouserns 
+      image: quay.io/cgruver0/che/sshd-workspace-base:stable
       endpoints:
         - exposure: public
           name: nodejs
@@ -16,12 +15,11 @@ components:
       cpuLimit: '2'
       cpuRequest: '0.25'
       mountSources: true
-      volumeMounts:
-        - name: npm
-          path: /home/user/.npm
-  - name: npm
-    volume:
-      size: 1G    
+      env:
+      - name: VSCODE_DEFAULT_WORKSPACE
+        value: "/projects/ip-binary-converter-devspace/ip-binary-converter-devspace.code-workspace"
+      - name: HOME
+        value: /projects/home
 commands:
   - id: 1-dependencies
     exec:
