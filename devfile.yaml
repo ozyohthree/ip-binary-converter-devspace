@@ -16,12 +16,11 @@ components:
       cpuLimit: '2'
       cpuRequest: '0.25'
       mountSources: true
-      volumeMounts:
-        - name: npm
-          path: /home/user/.npm
-  - name: npm
-    volume:
-      size: 1G    
+      env:
+      - name: VSCODE_DEFAULT_WORKSPACE
+        value: "/projects/vscode-sshd-test-workspace/ip-binary-converter-devspace.code-workspace"
+        name: HOME
+        value: /projects/home
 commands:
   - id: 1-dependencies
     exec:
