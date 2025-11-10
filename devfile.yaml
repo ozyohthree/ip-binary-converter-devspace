@@ -18,7 +18,7 @@ components:
       mountSources: true
       env:
       - name: VSCODE_DEFAULT_WORKSPACE
-        value: "/projects/vscode-sshd-test-workspace/ip-binary-converter-devspace.code-workspace"
+        value: "/projects/ip-binary-converter-devspace/ip-binary-converter-devspace.code-workspace"
         name: HOME
         value: /projects/home
 commands:
