@@ -1,7 +1,7 @@
 # Simple sample React App
 This app converts a decimal ip address to a 32 bit binary representation in 4 octets.
 
-[![Dev](https://img.shields.io/static/v1?label=Open%20in&message=Sandbox%20server%20(with%20VS%20Code)&logo=eclipseche&color=FDB940&labelColor=525C86)](https://devspaces.apps.cluster-pcq44.pcq44.sandbox2130.opentlc.com/#https://github.com/ozyohthree/ip-binary-converter-devspace)
+[![Dev](https://img.shields.io/static/v1?label=Open%20in&message=Sandbox%20server%20(with%20VS%20Code)&logo=eclipseche&color=FDB940&labelColor=525C86)](https://devspaces.apps.cluster.opentlc.com/#https://github.com/ozyohthree/ip-binary-converter-devspace)
 
 # Getting Started with Create React App
 
