@@ -1,9 +1,9 @@
 # Simple sample React App
 This app converts a decimal ip address to a 32 bit binary representation in 4 octets.
 
-### SSH Desktop IDE
+### SSH (Experimental) Desktop IDE
 
-[![Dev](https://img.shields.io/static/v1?label=Open%20in&message=Sandbox%20server%20(with%20SSH%20VS%20Code)&logo=eclipseche&color=FDB940&labelColor=525C86)](https://devspaces.apps.cluster-.opentlc.com/dashboard/#/load-factory?che-editor=che-incubator/che-code-sshd-experimental/next&url=https://github.com/ozyohthree/shopping-cart-react-devspace)
+[![Dev](https://img.shields.io/static/v1?label=Open%20in&message=Sandbox%20server%20(with%20SSH%20VS%20Code)&logo=eclipseche&color=FDB940&labelColor=525C86)](https://devspaces.apps.cluster-.opentlc.com/dashboard/#/load-factory?che-editor=che-incubator/che-code-sshd-experimental/next&url=https://github.com/ozyohthree/ip-binary-converter-devspace)
 
 # Getting Started with Create React App
 
