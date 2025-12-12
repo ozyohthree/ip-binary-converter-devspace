@@ -1,4 +1,4 @@
-# Simple IP Decimal to Binary converter React App
+# IP Decimal to Binary Converter React App
 This app converts a decimal ip address to a 32 bit binary representation in 4 octets.
 
 ### SSH (Experimental) Desktop IDE
