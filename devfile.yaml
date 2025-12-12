@@ -11,9 +11,9 @@ components:
           protocol: https
           targetPort: 3000
       memoryLimit: '8Gi'
-      memoryRequest: '512Mi'
-      cpuLimit: '2'
-      cpuRequest: '0.25'
+      memoryRequest: '2Gi'
+      cpuLimit: '1'
+      cpuRequest: '0.5'
       mountSources: true
       env:
       - name: VSCODE_DEFAULT_WORKSPACE
